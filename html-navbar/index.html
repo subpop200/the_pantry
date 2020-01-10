@@ -2,24 +2,78 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>here we go</title>
+    <title>here we go2</title>
   </head>
   <body>
-          <div class="nav--desktop">
-            <div class="mobile wrapper">
-              <div class="header-cart wrapper hidden-lg">
-                <a href=" /cart" class="CartToggle header-cart">
-                  <i class="icon icon-ra_bag">...</i>
-                </a>
-                <span class="header-cart_bubble cart cartCount has-items cartCount-updater hidden
-                count">0</span>
-              </div>
-            <div class="header-menu nav-wrapper">
-              <ul class="main-menu accessibleNav">...</ul>
-            </div>
-
-
-    
+    <div class="wrapper nav-wrapper">
+      <!-- clearly ^ this line is a wrapper representing the full border
+      and margin for the navigation bar-->
+      <div class="nav--desktop">
+        <!-- this one represents the inside of the margin/border area
+        of the nav-bar...or the actual navbar-->
+        <div class="mobile-wrapper">
+        <!--This is the wrapper around the logo name "rebecca atwood", not sure what
+        mobile means in this context-->
+          <div class="header-cart_wrapper hidden-lg">
+          <!--not sure what this is but it's within the mobile wrapper...it's hidden
+          but i'm not sure what this means in this context.  Perhaps a hidden function
+          wihin the button.  I couldn't find much information on my momentary research here.
+          But something is happening here that I'd like to know.-->
+            <a href="/cart" class="CartToggle header-cart">
+              <i class="icon icon-ra_bag"></i>  <!--interesting the explanation for an i tag, with mention of foreign concepts, language, or perhaps self-defined content-->
+            </a>
+            <!-- <a> is a hyperlink to content within the page...not external resources...
+            so this whole mobile wrapper around the logo is making more sense.  As in it is clickable
+            to content in the webpage..or in this case, links back to the same homepage since it's
+            the logo-->
+            <span class="header-cart_bubble cartCount has-items cartCount-updater hidden-count">0
+            </span>
+            <!-- not 100% sure how the span works but according to the basics, it is an inline element
+            and helps define structure-->
+          </div>
+          <div class="logo-wrapper ">
+            <!--this appears to be the true simple wrapper/box around the logo-->
+            <h1 class="h4 header-logo" itemscope itemtype="http://schema.org/Organization">
+              <!--I certainly went into the hyperlink and found out that it was a website
+              with a massive list of terms or interpretations in the code perhaps-->
+              <a href=" " itemprop="url">...</a>
+              <!-- this one was confusing...clearly it's a link to something on the page but I do
+              not have the symbol on my keyboard that goes into the quotation marks..but this is clearly
+              all within the logo wrapper and my suspicion ias that this logo wrapper is used elsewhere
+              on the which creates the necessity of another anchor with different properties.-->
+            </h1>
+          </div>
+          <a href class="menuToggle header-hamburger"></a>
+          <!--This is the anchor to the toggle menu...href allowing it to get directed to URLs in <thead>
+            page which makes sense since this highlights the navigation menu which makes sense Perhaps
+            since this precedes the div class=header-menu-->
+          </div>
+          <div class="header-menu nav-wrapper">
+            <!--clearly this is the header menu wrapper that goes around the menu items-->
+            <ul class="main-menu accessibleNav">  <!--here we have the beginning of a list of options on the header nav...
+              accessiblenav appears to be a function that creates accessibility to those buttons-->
+              <li class="grandparent  kids-4">...</li>
+              <li class="child  kids-0">...</li>
+              <li class="child  kids-0">...</li>
+              <li class="child  kids-0">...</li>
+              <li class="child  kids-0">...</li>
+              <li class="child  kids-0">...</li>
+              <li class="child  kids-0">...</li>
+              <li class="cart-text-link">...</li>
+            </ul>
+            <!--it's all part of the list that defines the menu options all the way down to the "bag" which
+            represents the cart for shopping as the text indicates "cart" in relation to "bag" on the header-->
+          </div>
+          <div class="nav--mobile" style>...</div>
+          <!--this one officially stumped me...it doesn't highlight anything on the website which
+          tells me this is strictly a style function that is connected to css on the logo perhaps-->
+          <div class="ajaxCart-fullContainer hidden wrapper">  <!--not quite sure but seems to be another hidden wrapper-->
+          ...</div>
+              ::after
+          </div>  <!--here we appear to be closing the mobile wrapper code division-->
+        </header>  <!--here we are closing ALL THE CODE that is represented here...right above this assignment's selection
+          we have the original header-->
+      </div>
 
   </body>
 </html>
