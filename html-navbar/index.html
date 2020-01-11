@@ -52,14 +52,49 @@
             <!--clearly this is the header menu wrapper that goes around the menu items-->
             <ul class="main-menu accessibleNav">  <!--here we have the beginning of a list of options on the header nav...
               accessiblenav appears to be a function that creates accessibility to those buttons-->
-              <li class="grandparent  kids-4">...</li>
-              <li class="child  kids-0">...</li>
-              <li class="child  kids-0">...</li>
-              <li class="child  kids-0">...</li>
-              <li class="child  kids-0">...</li>
-              <li class="child  kids-0">...</li>
-              <li class="child  kids-0">...</li>
-              <li class="cart-text-link">...</li>
+              <li class="grandparent  kids-4">
+                <a href="#" class="nav-link" id="Shop">Shop</a>     <!--It appears id= defines the title of the button....as in it's called shop...but I'm not sure why
+                  shop is presented after "Shop" again as >Shop<  I'm not sure what that means or why it's presented that way.  Also yes now it is abundantly clear that
+                  class is connected to the css style.  that makes sense.  Also what is a "nav-link" why does href go to #...what does that mean as a link?-->
+                <a href="#" class="nav-carat">
+                  <span class="plus">+</span>
+                  <span class="minus">-</span>
+                </a>   <!--this was beyond what the video mentioned but I was too curious...what of this plus minus code here?  Does that have to do with the fact that
+                  when you do hover over the shop button a drop down menu gets added?  Also since it's a drop down menu with more options, is that what the "#" represents?
+                  That little # symbol actually means all that?-->
+                <div class="main-menu-dropdown">...</div> == $0
+              </li>
+              <li class="child  kids-0">
+                <a href="/pages/about-us" class="nav-link" id="About">About </a> == $0
+              </li>    <!--clearly this is a child of the nav bar.  It is listed on the navbar.  href links to the about-us section of the webpage.  Class nav-link is the style of the
+                navigation link and id is the actual word category.  About the id...is that always the same code format for a button on a page to define it's name?-->
+              <li class="child  kids-0">
+                <a href="/pages/process" class="nav-link" id="Process">Process</a>
+              </li>
+              <li class="child  kids-0"> == $0    <!--why does this "== $0" appear when I click on the element?  It then disappears when I click off of it-->
+                <a href="/blogs/from-the-studio" class="nav-link" id="Blog">Blog</a>
+              </li>
+              <li class="child  kids-0">
+                <a href="/pages/book" class="nav-link" id="Books">Books</a>
+              </li>
+              <li class="child  kids-0">
+                <a href="/pages/visit-us" class="nav-link" id="Showroom">Showroom</a>
+              </li>
+              <li class="child  kids-0">
+                <a href="/pages/contact" class="nav-link" id="Contact">Contact</a>
+              </li>
+              <li class="cart-text-link">
+                <a href="/cart" class="CartToggle">
+                  "
+
+                          Bag
+                          "
+                  <span class=" hidden-count " id="nav-cartCountDesktop">(0)</span>
+                </a>
+              </li>  <!-- I'm not sure why the "bag section is formatted so differently. What does "hidden count mean"?  The id doesn't say Bag
+                so I'm confused about that...what does "nav-cartCountDesktop mean?  Why is there a (0) after the greater/less thans?  I think I would
+                like further clarification on why this whole list element is done this way and why there is a span used here as opposed to the other
+                list items-->
             </ul>
             <!--it's all part of the list that defines the menu options all the way down to the "bag" which
             represents the cart for shopping as the text indicates "cart" in relation to "bag" on the header-->
